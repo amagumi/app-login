@@ -11,7 +11,7 @@ require_once 'DBManager.php';
 // Crear una instancia de DBCommand
 
 // //Conexion sql pol
-$connection = new DBConnection('172.17.0.3,1433', 'PP_DDBB', 'sa', ' Informatica55_');
+$connection = new DBConnection('172.17.0.1,1433', 'PP_DDBB', 'SA', ' <Docker12*>');
 
 //Conexion sql pau
 // $connection = new DBConnection('172.17.0.3,1433', 'PP_DDBB', 'sa', 'P@ssw0rd');
@@ -60,7 +60,7 @@ if (empty($action)) {
             $dbManager->viewHistoricConnections();
             break;
         case "accvalidate":
-            $userManager->accountValidate($_GET['username'],$_GET['code']);
+            $userManager->accountValidate($_GET['username'], $_GET['code']);
         case "listusers":
             $userManager->listusers($_GET['ssid']);
 
@@ -102,5 +102,3 @@ if (empty($action)) {
 
 
 //localhost:40080/gen-web/gen-web/PHP/index.php?action=listusers&ssid=a0b39afe-6971-4d0c-85ca-d63bb5d07de2
-
-?>
