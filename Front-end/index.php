@@ -73,6 +73,7 @@ if (empty($action)) {
 }
 
 // Register:
+//http://localhost:40080/M07/app-login/Front-end/index.php?action=register&username=alex&name=alex&lastname=bujardon&password=Test12345!!&email=alex@gmail.com
 // localhost:40080/gen-web/gen-web/PHP/index.php?action=register&username=polrabascall&name=Pol&lastname=Rabascall&password=Test12345!!&email=polrabascall@gmail.com
 // http://localhost:40080/gen-web/PHP/index.php?action=register&username=PauAllendee&name=Pau&lastname=Allende&password=C0ntraseña2004!!&email=pauallendeherraiz@gmail.com
 

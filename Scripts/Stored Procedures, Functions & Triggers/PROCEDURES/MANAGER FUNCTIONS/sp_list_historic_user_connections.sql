@@ -14,7 +14,7 @@ BEGIN
     DECLARE @XMLFlag XML;
 
     --veifica estado usuaio
-    if
+    --if
         -- Verificar si hay conexiones para el usuario
         IF EXISTS (
             SELECT 1 

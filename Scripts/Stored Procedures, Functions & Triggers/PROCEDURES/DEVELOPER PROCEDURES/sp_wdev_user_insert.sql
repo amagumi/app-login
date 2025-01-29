@@ -26,7 +26,7 @@ USE PP_DDBB;
 
 -- sp_wdev_user_insert
 go
-CREATE OR ALTER PROCEDURE sp_wdev_user_insert
+CREATE PROCEDURE sp_wdev_user_insert
 @USERNAME NVARCHAR(25),
 @NAME NVARCHAR(25),
 @LASTNAME NVARCHAR(50),
