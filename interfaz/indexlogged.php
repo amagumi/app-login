@@ -63,11 +63,10 @@
 </head>
 <body>
 
+<div> <p> Bienvenide, </p> <?php echo $_SESSION['username'] ?>
 <div class="container">
     <h1>Opciones de Usuario</h1>
     <div class="button-container">
-        <button onclick="window.location.href='register.html'">Registrar Nuevo Usuario</button>
-        <button onclick="window.location.href='login.html'">Iniciar Sesión</button>
         <button onclick="window.location.href='index.php?action=changepass'">Cambiar Contraseña</button>
         <button onclick="window.location.href='index.php?action=accvalidate'">Validar Cuenta</button>
         <button onclick="window.location.href='index.php?action=listusers'">Listar Usuarios</button>

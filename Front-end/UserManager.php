@@ -56,7 +56,7 @@ class UserManager {
 
                 // Establecer el encabezado para XML
                 header('Content-Type: text/xml');
-
+                //echo $_SESSION['username']; // para ver la sesion del usuario logeado porque en xml no se printea
                 // Mostrar la respuesta XML
                 echo $result;
             } catch (PDOException $e) {

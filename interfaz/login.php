@@ -52,7 +52,8 @@
 
 <div class="container">
     <h2>Iniciar Sesión</h2>
-    <form action="index.php" method="GET">
+    <form action="indexlogged.php" method="GET"> 
+        <!-- ../Front-end/index.php -->
         <input type="hidden" name="action" value="login">
         
         <div class="form-group">
@@ -65,7 +66,7 @@
             <input type="password" id="password" name="password" required>
         </div>
 
-        <button type="submit">Iniciar Sesión</button>
+        <button type="submit" value="login">Iniciar Sesión</button>
     </form>
 </div>
 

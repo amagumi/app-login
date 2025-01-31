@@ -36,6 +36,7 @@ if (empty($action)) {
         case "register":
             $userManager->register($_GET['username'], $_GET['name'], $_GET['lastname'], $_GET['password'], $_GET['email']);
             break;
+        // el register2 es lo mismo que el normal
         case "register2":
             $username = $_GET['username'];
             $name = $_GET['name'];

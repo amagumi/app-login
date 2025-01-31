@@ -49,7 +49,7 @@
 
 <div class="container">
     <h2>Formulario de Registro</h2>
-    <form action="index.php" method="GET">
+    <form action="../../Front-end/index.php" method="GET">
         <input type="hidden" name="action" value="register">
         
         <div class="form-group">
@@ -77,7 +77,7 @@
             <input type="email" id="email" name="email" required>
         </div>
 
-        <button type="submit">Registrarse</button>
+        <button type="submit" value="register">Registrarse</button>
     </form>
 </div>
 
