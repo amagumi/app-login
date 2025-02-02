@@ -55,7 +55,8 @@ class UserManager {
                 $_SESSION['username'] = $username;
 
                 // Establecer el encabezado para XML
-                header('Content-Type: text/xml');
+                header('Location: ../interfaz/indexlogged.php');
+                //header('Content-Type: text/xml');
                 //echo $_SESSION['username']; // para ver la sesion del usuario logeado porque en xml no se printea
                 // Mostrar la respuesta XML
                 echo $result;
@@ -65,15 +66,18 @@ class UserManager {
         }
     }
 
-    public function logout() {
+    public function logout() {  
         try {
             if (isset($_SESSION['username'])) { 
                 $username = $_SESSION['username'];
                 $result = $this->dbCommand->execute('sp_user_logout', array($username));
-
+                session_destroy();
+                session_unset();
+                //$sd = session_destroy();
                 // Establecer el encabezado para XML
                 header('Content-Type: text/xml');
-
+                //echo $_SESSION['username'];
+        
                 // Mostrar la respuesta XML
                 echo $result;
             }
@@ -107,8 +111,9 @@ class UserManager {
             try {
                 $result = $this->dbCommand->execute('sp_user_accountvalidate', array($username, $code));
 
+                header('Location: ../interfaz/validateaccountresult.php');
                 // Establecer el encabezado para XML
-                header('Content-Type: text/xml');
+                //header('Content-Type: text/xml');
 
                 // Mostrar la respuesta XML
                 echo $result;

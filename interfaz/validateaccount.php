@@ -1,29 +1,18 @@
-<?php
-session_start();
-?>
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles.css">
-    <title>Login</title>
-    <style>
-        /* Reutilizamos el estilo anterior */
-    </style>
+    <title>Validate Account</title>
+    
 </head>
-
 <body>
 
-
-
 <div class="container">
-    <h2>Login</h2>
+    <h2>Validate Account</h2>
     <form action="../Front-end/index.php" method="GET"> 
-        <!-- ../Front-end/index.php -->
-        <!-- indexlogged.php -->
-        <input type="hidden" name="action" value="login">
+        <input type="hidden" name="action" value="accvalidate">
         
         <div class="form-group">
             <label for="username">Username</label>
@@ -31,11 +20,11 @@ session_start();
         </div>
 
         <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" required>
+            <label for="text">Register Code</label>
+            <input type="text" id="code" name="code" required>
         </div>
 
-        <button type="submit" value="login">Log In</button>
+        <button type="submit" value="accvalidate">Verify</button>
     </form>
 </div>
 
