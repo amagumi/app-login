@@ -10,7 +10,7 @@
 <body>
 
 <div class="container">
-    <h1>Bienvenido</h1>
+    <h1>Welcome</h1>
     <div class="button-container">
         <button id="signupbtn" onclick="window.location.href='interfaz/register.php'">Sign Up</button>
         <button onclick="window.location.href='interfaz/login.php'">Sign In</button>

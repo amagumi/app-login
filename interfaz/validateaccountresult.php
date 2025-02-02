@@ -17,6 +17,7 @@
     //     echo "<h2> No te has desconectado </h2>";
     // }
     ?>
+    <h2>Verified successfully</h2>
     <button onclick="window.location.href='../start.php'">Back to Main Menu</button>
 </div>
 

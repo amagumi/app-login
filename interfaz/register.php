@@ -10,7 +10,7 @@
 <body>
 
 <div class="container">
-    <h2>Formulario de Registro</h2>
+    <h2>Registration Form</h2>
     <form action="../Front-end/index.php" method="GET">
         <input type="hidden" name="action" value="register">
         
