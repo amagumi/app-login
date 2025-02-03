@@ -22,8 +22,8 @@ class UserManager {
                 //url pau
                 // $url = 'https://script.google.com/macros/s/AKfycbzs-WaweIA_cKNVVgqqPmianx7dn4wPI7AflDvM78iUcP8pUoYNh5u5Dg7nBlkofdKu/exec';
                 
-                //url Pol
-                $url = 'https://script.google.com/macros/s/AKfycbyot1qJnOEJk6AWjOFKg9aW2IFoocmMFPXwfRUAzPwFgbnmgBIRWKboFUUwlyKQvVc/exec';
+                //url Alex
+                $url = 'https://script.google.com/macros/s/AKfycbzHHL6pycrumpsogGSHrp1Kv88lWHB7agA71VIaEpSkTNPJWYNoo_3vtCN0_SJgx-nNdA/exec';
                 
                 // Parámetros del correo electrónico
                 $destinatario = $email;

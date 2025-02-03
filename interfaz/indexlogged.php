@@ -25,7 +25,7 @@ session_start();
 <div class="container">
     <h2>User Options</h2>
     <div class="button-container-vertical">
-        <button onclick="window.location.href='index.php?action=changepass'">Change Password</button>
+        <button onclick="window.location.href='changepassword.php'">Change Password</button>
         <button onclick="window.location.href='validateaccount.php'">Validate Account</button>
         <button onclick="window.location.href='../Front-end/index.php?action=listusers'">User List</button>
         <button onclick="window.location.href='logout.php'">Log Out</button>
