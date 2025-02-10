@@ -18,7 +18,7 @@
     // }
     ?>
     <h2>Verified successfully</h2>
-    <button onclick="window.location.href='../start.php'">Back to Main Menu</button>
+    <button onclick="window.location.href='indexlogged.php'">Back to Main Menu</button>
 </div>
 
 </body>

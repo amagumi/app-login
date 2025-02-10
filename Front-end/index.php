@@ -11,7 +11,7 @@ require_once 'DBManager.php';
 // Crear una instancia de DBCommand
 
 // //Conexion sql pol
-$connection = new DBConnection('172.17.0.2,1433', 'PP_DDBB', 'SA', '<Alba123>');
+$connection = new DBConnection('172.17.0.1,1433', 'PP_DDBB', 'SA', '<Alba123>');
 
 //Conexion sql pau
 // $connection = new DBConnection('172.17.0.3,1433', 'PP_DDBB', 'sa', 'P@ssw0rd');
