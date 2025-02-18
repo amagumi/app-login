@@ -55,8 +55,8 @@ class UserManager {
                 $_SESSION['username'] = $username;
 
                 // Establecer el encabezado para XML
-                header('Location: ../interfaz/indexlogged.php');
-                //header('Content-Type: text/xml');
+                //header('Location: ../interfaz/indexlogged.php');
+                header('Content-Type: text/xml');
                 //echo $_SESSION['username']; // para ver la sesion del usuario logeado porque en xml no se printea
                 // Mostrar la respuesta XML
                 echo $result;
@@ -142,6 +142,24 @@ class UserManager {
             }
         }
     }
+    public function checkpwd($password) {
+        if (empty($password)) {
+            echo "Todos los campos son obligatorios.";
+        } else {
+            try {
+                $result = $this->dbCommand->execute('sp_user_register_check_pwd', array($password));
+    
+                header('Content-Type: text/xml');
+                // Mostrar la respuesta XML
+                echo $result;
+    
+            } catch (PDOException $e) {
+                echo 'Error: ' . $e->getMessage();
+            }
+        }
+    }
+    
+    
 }
 
 ?>

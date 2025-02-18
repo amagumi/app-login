@@ -11,7 +11,7 @@ require_once 'DBManager.php';
 // Crear una instancia de DBCommand
 
 // //Conexion sql pol
-$connection = new DBConnection('172.17.0.2,1433', 'PP_DDBB', 'SA', '<Alba123>');
+$connection = new DBConnection('172.17.0.1,1433', 'PP_DDBB', 'SA', '<Docker12*>');
 
 //Conexion sql pau
 // $connection = new DBConnection('172.17.0.3,1433', 'PP_DDBB', 'sa', 'P@ssw0rd');
@@ -64,7 +64,8 @@ if (empty($action)) {
             $userManager->accountValidate($_GET['username'], $_GET['code']);
         case "listusers":
             $userManager->listusers($_GET['ssid']);
-
+        case "checkpwd":
+            $userManager->checkpwd($_GET['password']);       
             break;
 
         default:
@@ -74,6 +75,7 @@ if (empty($action)) {
 }
 
 // Register:
+//http://localhost:40080/M07/app-login/Front-end/index.php?action=register&username=alex&name=alex&lastname=bujardon&password=Test12345!!&email=alex@gmail.com
 // localhost:40080/gen-web/gen-web/PHP/index.php?action=register&username=polrabascall&name=Pol&lastname=Rabascall&password=Test12345!!&email=polrabascall@gmail.com
 // http://localhost:40080/gen-web/PHP/index.php?action=register&username=PauAllendee&name=Pau&lastname=Allende&password=C0ntraseña2004!!&email=pauallendeherraiz@gmail.com
 
@@ -82,6 +84,7 @@ if (empty($action)) {
 // http://localhost:40080/gen-web/PHP/index.php?action=accvalidate&username=PauAllendee&code=40381
 
 // Login: 
+//http://localhost:40080/M07/app-login/Front-end/index.php?action=login&username=alex&password=Test12345!!
 // localhost:40080/gen-web/gen-web/PHP/index.php?action=login&username=polrabascall&password=Test12345!!
 // http://localhost:40080/gen-web/PHP/index.php?action=login&username=PauAllendee&password=C0ntraseña2004!!
 
@@ -103,3 +106,6 @@ if (empty($action)) {
 
 
 //localhost:40080/gen-web/gen-web/PHP/index.php?action=listusers&ssid=a0b39afe-6971-4d0c-85ca-d63bb5d07de2
+
+//Verificar si la password cumple los requisitos
+//http://localhost:40080/M07/app-login/Front-end/index.php?action=checkpwd&password=testt

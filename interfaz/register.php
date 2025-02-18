@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles.css">
     <title>Register</title>
+    <script src="../js/passwordValidator.js"></script>
+
     
 </head>
 <body>
@@ -32,6 +34,7 @@
         <div class="form-group">
             <label for="password">Password</label>
             <input type="password" id="password" name="password" required>
+            <small id="passwordFeedback" class="feedback"></small> <!-- Aquí se mostrará el mensaje -->
         </div>
 
         <div class="form-group">

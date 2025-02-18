@@ -3,11 +3,13 @@ GO
 
 CREATE OR ALTER PROCEDURE sp_xml_error_message
     @RETURN INT,
-    @XmlResponse XML OUTPUT
+    @XmlResponse XML OUTPUT,
+	@SSID NVARCHAR(255)
 AS
 BEGIN
     DECLARE @ERROR_CODE INT;
     SET @ERROR_CODE = @RETURN;
+	SET @SSID = select CONNECTION_ID from USER_CONNECTIONS order by desc
 
     DECLARE @ERROR_MESSAGE NVARCHAR(200);
 
@@ -18,8 +20,9 @@ BEGIN
         
         SET @XmlResponse = (
             SELECT @ERROR_CODE AS 'StatusCode',
-                @ERROR_MESSAGE AS 'Message'
-            FOR XML PATH('Success'), ROOT('Successes'), TYPE
+                @ERROR_MESSAGE AS 'Message',
+				@SSID AS 'SSID'
+            FOR XML PATH('Success'), ROOT('SuccessesPP'), TYPE
         );
     END
     ELSE
