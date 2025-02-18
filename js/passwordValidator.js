@@ -29,7 +29,6 @@ document.addEventListener("DOMContentLoaded", function () {
             .catch(error => {
                 console.error('Error en la solicitud AJAX:', error);
             });
-
     });
     }
 });
