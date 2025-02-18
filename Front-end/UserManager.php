@@ -55,8 +55,8 @@ class UserManager {
                 $_SESSION['username'] = $username;
 
                 // Establecer el encabezado para XML
-                //header('Location: ../interfaz/indexlogged.php');
-                header('Content-Type: text/xml');
+                header('Location: ../interfaz/indexlogged.php');
+                //header('Content-Type: text/xml');
                 //echo $_SESSION['username']; // para ver la sesion del usuario logeado porque en xml no se printea
                 // Mostrar la respuesta XML
                 echo $result;
