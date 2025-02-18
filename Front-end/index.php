@@ -63,9 +63,10 @@ if (empty($action)) {
             $userManager->accountValidate($_GET['username'], $_GET['code']);
         case "listusers":
             $userManager->listusers($_GET['ssid']);
-
             break;
-
+        case "checkpwd":
+            $userManager->checkpwd($_GET['password']);       
+            break;
         default:
             echo "Acción no válida.";
             break;

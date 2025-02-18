@@ -142,6 +142,22 @@ class UserManager {
             }
         }
     }
+    public function checkpwd($password) {
+        if (empty($password)) {
+            echo "Todos los campos son obligatorios.";
+        } else {
+            try {
+                $result = $this->dbCommand->execute('sp_user_register_check_pwd', array($password));
+    
+                header('Content-Type: text/xml');
+                // Mostrar la respuesta XML
+                echo $result;
+    
+            } catch (PDOException $e) {
+                echo 'Error: ' . $e->getMessage();
+            }
+        }
+    }
 }
 
 ?>
