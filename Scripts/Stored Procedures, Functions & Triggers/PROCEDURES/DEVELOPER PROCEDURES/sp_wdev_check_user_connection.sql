@@ -1,10 +1,12 @@
 USE PP_DDBB;
-go
+GO
+
 CREATE OR ALTER PROCEDURE sp_wdev_check_user_connection
     @USERNAME NVARCHAR(25),
     @USER_ID INT OUTPUT,
     @DATE_CONNECTED DATETIME OUTPUT,
-    @ret INT OUTPUT
+    @ret INT OUTPUT,
+	@Comments NVARCHAR(25)
 AS
 BEGIN
     SET NOCOUNT ON;
@@ -21,6 +23,11 @@ BEGIN
             @USER_ID = USER_ID, 
             @DATE_CONNECTED = DATE_CONNECTED 
         FROM USER_CONNECTIONS 
+        WHERE USERNAME = @USERNAME;
+
+
+        UPDATE USER_CONNECTIONS 
+        SET Comments = 'hola' 
         WHERE USERNAME = @USERNAME;
 
         SET @ret = 100; -- Éxito
