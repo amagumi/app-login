@@ -10,11 +10,11 @@ require_once 'DBManager.php';
 
 // Crear una instancia de DBCommand
 
-// //Conexion sql pol
-$connection = new DBConnection('172.17.0.1,1433', 'PP_DDBB', 'SA', '<Docker12*>');
+// //Conexion sql alex
+//$connection = new DBConnection('172.17.0.1,1433', 'PP_DDBB', 'SA', '<Docker12*>');
 
-//Conexion sql pau
-// $connection = new DBConnection('172.17.0.3,1433', 'PP_DDBB', 'sa', 'P@ssw0rd');
+//Conexion sql alba
+$connection = new DBConnection('172.17.0.1,1433', 'PP_DDBB', 'SA', '<Alba123>');
 
 $pdoObject = $connection->getPDOObject();
 
