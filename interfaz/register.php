@@ -11,7 +11,8 @@
 </head>
 <body>
 
-<div class="container">
+
+<div class="containerRegister">
     <h2>Registration Form</h2>
     <form action="../Front-end/index.php" method="GET">
         <input type="hidden" name="action" value="register">
@@ -34,7 +35,7 @@
         <div class="form-group">
             <label for="password">Password</label>
             <input type="password" id="password" name="password" required>
-            <small id="passwordFeedback" class="feedback"></small> <!-- Aquí se mostrará el mensaje -->
+            <small id="passwordFeedback" class="feedback" style="color: grey;"></small> <!-- Aquí se mostrará el mensaje -->
         </div>
 
         <div class="form-group">
@@ -44,7 +45,9 @@
 
         <button type="submit" value="register">Sign Up</button>
     </form>
-</div>
+</div> 
+
+
 
 </body>
 </html>
