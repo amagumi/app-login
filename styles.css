@@ -12,7 +12,15 @@ body {
 .container {
     text-align: center;
     padding: 30px;
-    background-color: #fff;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.containerRegister {
+    text-align: center;
+    padding: 30px;
+    width: 380px;
+    background-color: #ffffff;
     border-radius: 30px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
