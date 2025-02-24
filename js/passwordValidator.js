@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
             document.getElementById("password-message").innerText = ''; // Limpiar el mensaje
             return;
         }
-        fetch(`../Front-end/index.php?action=checkpwd&password=${encodeURIComponent(password)}`)
+        fetch(`../Front-end/ws.php?action=checkpwd&password=${encodeURIComponent(password)}`)
             .then(response => response.text()) // Asumimos que el servidor devuelve un texto
             .then(data => {
                 const parser = new DOMParser();

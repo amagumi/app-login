@@ -27,9 +27,9 @@ session_start();
     <div class="button-container-vertical">
         <button onclick="window.location.href='changepassword.php'">Change Password</button>
         <button onclick="window.location.href='validateaccount.php'">Validate Account</button>
-        <button onclick="window.location.href='../Front-end/index.php?action=listusers'">User List</button>
+        <button onclick="window.location.href='../Front-end/ws.php?action=listusers'">User List</button>
         <button onclick="window.location.href='logout.php'">Log Out</button>
-                                             <!-- ../Front-end/index.php?action=logout -->
+                                             <!-- ../Front-end/ws.php?action=logout -->
                                              <!-- logout.php -->
     </div>
 </div>

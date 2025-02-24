@@ -11,7 +11,7 @@
 
 <div class="container">
     <h2>Change Password</h2>
-    <form action="../Front-end/index.php" method="GET"> 
+    <form action="../Front-end/ws.php" method="GET"> 
         <input type="hidden" name="action" value="changepass">
         
         <div class="form-group">

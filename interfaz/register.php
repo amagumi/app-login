@@ -14,7 +14,7 @@
 
 <div class="containerRegister">
     <h2>Registration Form</h2>
-    <form action="../Front-end/index.php" method="GET">
+    <form action="../Front-end/ws.php" method="GET">
         <input type="hidden" name="action" value="register">
         
         <div class="form-group">

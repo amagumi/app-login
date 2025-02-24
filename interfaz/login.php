@@ -20,8 +20,8 @@ session_start();
 
 <div class="container">
     <h2>Login</h2>
-    <form action="../Front-end/index.php" method="GET"> 
-        <!-- ../Front-end/index.php -->
+    <form action="../Front-end/ws.php" method="GET"> 
+        <!-- ../Front-end/ws.php -->
         <!-- indexlogged.php -->
         <input type="hidden" name="action" value="login">
         
